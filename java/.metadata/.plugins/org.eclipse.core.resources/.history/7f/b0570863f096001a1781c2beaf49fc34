@@ -1,0 +1,19 @@
+package exo1;
+
+import java.util.Scanner;
+
+public class Exo1 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter la valeur de a");
+		
+		System.out.println(Integer.parseInt(sc.nextLine()));
+		
+		
+		sc.close();
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package exo5;
+
+import java.util.Scanner;
+
+public class Exo5 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int s = 0;
+		
+		for (int i = 0; i < 5 ; i++) {
+			System.out.println("Entrer une valeur ");
+			s = s+ sc.nextInt();
+		}
+		
+		System.out.println("la somme est "+s);
+ 
+	}
+
+}

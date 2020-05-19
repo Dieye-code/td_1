@@ -1,0 +1,23 @@
+package exo1;
+
+import java.util.Scanner;
+
+public class Exo1 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter la valeur de a");
+		
+		try {
+			a = Integer.parseInt(sc.next());
+		} catch (Exception e) {
+			System.out.println("vous devez entrer un entier");
+		}
+		
+		
+		sc.close();
+
+	}
+
+}

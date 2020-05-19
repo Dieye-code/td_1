@@ -1,0 +1,24 @@
+package exo15;
+
+import java.util.Scanner;
+
+public class Exo15 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Entrer le nombre");
+		int a = sc.nextInt();
+		
+		for (int i = 0; i <= a; i++) {
+			s += i;
+		}
+		
+		int s = 0;
+		
+		sc.close();
+
+	}
+
+}

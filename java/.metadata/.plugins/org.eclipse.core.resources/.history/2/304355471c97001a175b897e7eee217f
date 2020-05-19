@@ -1,0 +1,62 @@
+package exo3;
+
+import java.util.Scanner;
+
+public class Exo3 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("entrer la resistance r1 ");
+		int r1 = 0;
+		do {
+			try {
+				r1 = Integer.parseInt(sc.next());
+			} catch (Exception e) {
+				System.out.println("La resistance ne peut pas etre inferieur a 1");
+			}
+		} while (r1 <= 0);
+		
+		System.out.println("entrer la resistance r2 ");
+		int r2 = 0;
+		do {
+			try {
+				r2 = Integer.parseInt(sc.next());
+			} catch (Exception e) {
+				System.out.println("La resistance ne peut pas etre inferieur a 1");
+			}
+		} while (r1 <= 0);
+		
+		System.out.println("entrer la resistance r3 ");
+		int r3 = 0;
+		do {
+			try {
+				r3 = Integer.parseInt(sc.next());
+			} catch (Exception e) {
+				System.out.println("La resistance ne peut pas etre inferieur a 1");
+			}
+		} while (r1 <= 0);
+		System.out.println("1-------------la resistance en serie\n");
+		System.out.println("2---------la resistance en parallele\n");
+		int c = 0;
+		do {
+			try {
+				c = Integer.parseInt(sc.next());
+			} catch (Exception e) {
+				System.out.println("vous devez saisir un entier");
+			}
+		} while (r1 <= 0);
+		
+		switch (c) {
+		case 1: {
+			
+			System.out.println("La resistance en serie est : "+r1+r2+r3);
+		}
+		default:
+			throw new IllegalArgumentException("Unexpected value: " + c);
+		}
+		sc.close();
+
+	}
+
+}

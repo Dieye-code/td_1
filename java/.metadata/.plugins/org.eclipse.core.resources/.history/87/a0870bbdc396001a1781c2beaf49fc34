@@ -1,0 +1,43 @@
+package exo16;
+
+import java.util.Scanner;
+
+public class Main_Exo_16 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("entrer la valeur de X");
+		int x = sc.nextInt();
+		
+		
+		System.out.println("entrer la valeur de n");
+		int n= sc.nextInt();
+		
+		int q=0;
+		int r=0;
+		int a = x < 0 ? 0 : 1;
+		int b = n < 0 ? 0 : 1;
+		
+		r = x>0 ? x : -x;
+		int c  = n>0 ? n : -n;
+		
+		r = x;
+		while (r>=c) {
+			r = r - c;;
+			q +=1;
+		}
+		if(a == 00 || b == 0 ) {
+			if(a==1 || b==1)
+				q = -q;
+		}
+		
+		System.out.println("la division de "+x+" par "+n+"est "+q);
+		
+		sc.close();
+
+	}
+
+}

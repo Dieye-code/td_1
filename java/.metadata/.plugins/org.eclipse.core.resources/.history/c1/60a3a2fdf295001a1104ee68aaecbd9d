@@ -1,0 +1,22 @@
+package firstProject;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("entrer un nombre");
+		 String a =  sc.nextLine();
+		 Integer b = new Integer(a);
+		 
+		 System.out.println(b.intValue());
+		 
+		 
+		 
+		 
+		 sc.close();
+
+	}
+
+}

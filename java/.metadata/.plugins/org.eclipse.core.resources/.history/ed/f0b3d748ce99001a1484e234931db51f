@@ -1,0 +1,18 @@
+package exo23;
+
+public class Exo23 {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Dans 12 mois nous aurons "+nbl(12));
+
+	}
+	
+	public static int nbl(int n) {
+		if(n<=1)
+			return 2;
+		else
+			return nbl(n-1)+nbl(n-2);
+	}
+
+}

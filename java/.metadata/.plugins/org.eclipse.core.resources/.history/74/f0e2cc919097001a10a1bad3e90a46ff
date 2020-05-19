@@ -1,0 +1,22 @@
+package exo13;
+
+import java.util.Scanner;
+
+public class Exo13 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Entrer Le Jour");
+		int j = sc.nextInt();
+		System.out.println("Entrer Le Mois");
+		int m = sc.nextInt();
+		System.out.println("Entrer L'année");
+		int a = sc.nextInt();
+		
+		
+		sc.close();
+
+	}
+
+}

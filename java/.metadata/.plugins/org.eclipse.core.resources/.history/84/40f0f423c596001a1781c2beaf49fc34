@@ -1,0 +1,23 @@
+package exo22;
+
+import java.util.Scanner;
+
+public class Exo22 {
+
+	public static void main(String[] args) {
+		Scanner sc  = new Scanner(System.in);
+		
+		int n;
+		System.out.println("entrer la taille du tableau");
+		n = sc.nextInt();
+		
+		while(n<0 && n>50) {
+			System.out.println("vous devez saisir un nombre compris entre 10 et 50");
+			n = sc.nextInt();
+		}
+		
+		
+		sc.close();
+	}
+
+}

@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Exo10 {
+
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Entrer l'heure de depart");
+		System.out.println("H:");
+		int hd = sc.nextInt();
+		System.out.println("Mn:");
+		int md = sc.nextInt();
+		System.out.println("Entrer l'heure d'arrivé");
+		System.out.println("H:");
+		int ha = sc.nextInt();
+		System.out.println("Mn:");
+		int ma = sc.nextInt();
+		
+		int h1 = hd*60+md;
+		int h2 = ha*60+ma;
+		
+		if(h1>h2)
+			h2 = h2+24;
+		
+		int d = h2-h1;
+		
+		System.out.println("La durée de vol est : "+d/60+"H"+d%60+"Mn");
+		
+		sc.close();
+
+	}
+	
+}

@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Exo10 {
+
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter la valeur de a");
+		Integer a = new Integer(sc.nextInt());
+		System.out.println("Enter la valeur de b");
+		int b = sc.nextInt();
+		System.out.println("Enter la valeur de c");
+		int c = sc.nextInt();
+		
+		echange(a, b);
+		echange(a, c);
+		echange(b, c);
+		
+		System.out.println("L'ordre croissant est "+a+" - "+b+" - "+c);
+		
+		sc.close();
+
+	}
+	
+	static void echange(int a, int b) {
+		
+		if(a>b) {
+			int c = a;
+			a = b;
+			b = c;
+		}
+		
+	}
+}

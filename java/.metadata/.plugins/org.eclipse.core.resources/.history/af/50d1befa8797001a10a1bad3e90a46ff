@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Exo10 {
+
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
+		System.out.println("La durée de vol est : "+d/60+"H"+d%60+"Mn");
+		
+		sc.close();
+
+	}
+	
+	private void echange(int a, int b) {
+		
+		if(a>b) {
+			int c = a;
+			a = b;
+			b = c;
+		}
+		
+	}
+}

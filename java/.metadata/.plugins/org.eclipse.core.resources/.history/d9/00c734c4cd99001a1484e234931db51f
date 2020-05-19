@@ -1,0 +1,19 @@
+package exo23;
+
+import java.util.Scanner;
+
+public class Exo23 {
+
+	public static void main(String[] args) {
+		
+
+	}
+	
+	public int nbl(n) {
+		if(n<=1)
+			return 2;
+		else
+			return nbl(n-1)+nbl(n-2)	
+}
+
+}
