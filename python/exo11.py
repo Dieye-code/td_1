@@ -18,6 +18,9 @@ elif o=="-":
 elif o == "*":
     print(a, " X ", b, " = ", a*b)
 elif o == "/":
-    print(a, " / ", b, " = ", a//b)
+    if b==0:
+		print("Impossible de diviser par 0")
+	else:
+		print(a, " / ", b, " = ", a//b)
 else:
     print("Votre choix n'existe pas")

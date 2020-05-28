@@ -36,7 +36,10 @@ public class Exo11 {
 				}
 		case "/": {
 			
-			System.out.println(a+" / "+b+" = "+a/b);
+			if(b==0)
+				System.out.println("Impossible de diviser par 0);
+			else
+				System.out.println(a+" / "+b+" = "+a/b);
 			break;
 		}
 
